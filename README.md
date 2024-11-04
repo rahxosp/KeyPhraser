@@ -26,7 +26,7 @@ Ensure the following are installed:
 
 1. **Clone the Repository**:
     ```bash
-    git clone https://github.com/yourusername/KeyPhrase.git
+    git clone https://github.com/rahxosp/KeyPhrase.git
     cd KeyPhrase
     ```
 
