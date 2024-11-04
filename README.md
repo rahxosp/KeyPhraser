@@ -58,4 +58,38 @@ Store credentials in the `database.py` service. You can retrieve and cycle throu
 **KeyPhrase** includes a system tray icon for quick access. From the tray, you can show/hide the application or exit it entirely.
 
 ## Project Structure
-
+.
+├── assets                      # Assets such as icons, images, etc.
+├── config                      # Configuration files
+│   ├── settings.py             # Application settings and constants
+│   ├── styles.py               # UI styling settings
+│   └── __init__.py
+├── data                        # Data storage and logs
+│   ├── logs                    # Log files for debugging and monitoring
+│   └── replacements.db         # SQLite database for replacements and credentials
+├── services                    # Core services of the application
+│   ├── database.py             # Manages SQLite database operations
+│   ├── hotkey_manager.py       # Manages hotkey registration and execution
+│   ├── system_tray.py          # Handles system tray integration
+│   ├── text_replacer.py        # Text replacement service for automatic substitutions
+│   └── __init__.py
+├── ui                          # User interface components
+│   ├── main_window.py          # Main application window
+│   ├── footer.py               # Footer component for the UI
+│   ├── sidebar                 # Sidebar components for navigation
+│   │   ├── base.py             # Base class for sidebar components
+│   │   ├── credentials_tab.py  # Tab for managing credentials
+│   │   ├── hotkey_tab.py       # Tab for hotkey settings
+│   │   ├── shortcuts_tab.py    # Tab for managing shortcuts and replacements
+│   │   ├── sidebar.py          # Main sidebar functionality
+│   │   └── __init__.py
+│   └── __init__.py
+├── utils                       # Utility functions and helpers
+│   ├── decorators.py           # Decorators for various functionalities
+│   ├── helpers.py              # Helper functions for common tasks
+│   ├── logger.py               # Logging utility for application events
+│   ├── validators.py           # Input validation functions
+│   └── __init__.py
+├── main.py                     # Entry point for the application
+├── requirements.txt            # Required dependencies for the project
+└── README.md                   # Project documentation
